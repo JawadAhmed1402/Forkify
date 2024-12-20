@@ -56,8 +56,8 @@ function getRecipes(n, iter) {
          <p><span id="recipes-content-Serving">${singleRecipeinput.servings}</span>SERVINGS</p>
         </div>
         <div class="recipes-content-Options">
-          <p id="recipes-content-Options-1">(+)</p>
-          <p id="recipes-content-Options-2">(-)</p>
+          <p id="recipes-content-Options-1">➕</p>
+          <p id="recipes-content-Options-2">➖</p>
         </div>
       </div>
       <div id="recipes-content-Ingredients">
