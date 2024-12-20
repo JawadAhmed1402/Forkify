@@ -214,10 +214,12 @@ body {
 }
 .recipes-content-Options {
   display: flex;
-  justify-content: space-evenly;
   width: 50%;
   text-align: end;
-  margin-left: 5%;
+  margin-left: 40%;
+}
+.recipes-content-Options p {
+  margin-right: 15%;
 }
 #recipes-content-Ingredients {
   padding-top: 3.25pc;
