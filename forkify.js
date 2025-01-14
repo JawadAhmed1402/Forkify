@@ -14,6 +14,8 @@ const singleRecipeContainer = document.querySelector("#recipes-content");
 let ingredientsList;
 let i = 0;
 function ingerdAdd(i, singleRecipeinput, count) {
+  // let copy = count;
+  // if (count == 0) copy = -2;
   let quantity = singleRecipeinput.ingredients[i].quantity;
   let unit = singleRecipeinput.ingredients[i].unit;
   let description = singleRecipeinput.ingredients[i].description;
@@ -26,11 +28,33 @@ function ingerdAdd(i, singleRecipeinput, count) {
   if (description == null) {
     description = " ";
   }
-  let html2 = `
+  if (count <= 0) {
+    console.log(count);
+    // count = 0;
+    let html2;
+    if (count == 0)
+      html2 = `
+            <li class="recipes-Ingredients">
+             <span>✓</span> ${(quantity / 2).toFixed(2)} ${unit} ${description}
+          </li>`;
+    if (count == -1)
+      html2 = `
+            <li class="recipes-Ingredients">
+              <span>✓</span> ${(quantity / 3).toFixed(2)} ${unit} ${description}
+            </li>`;
+    if (count == -2)
+      html2 = `
+            <li class="recipes-Ingredients">
+              <span>✓</span> ${(quantity / 4).toFixed(2)} ${unit} ${description}
+            </li>`;
+    ingredientsList.insertAdjacentHTML("beforeend", html2);
+  } else {
+    let html2 = `
             <li class="recipes-Ingredients">
              <span>✓</span> ${quantity * count} ${unit} ${description}
           </li>`;
-  ingredientsList.insertAdjacentHTML("beforeend", html2);
+    ingredientsList.insertAdjacentHTML("beforeend", html2);
+  }
 }
 function getRecipes(n, iter) {
   let singleRecipeinput;
@@ -110,8 +134,8 @@ function getRecipes(n, iter) {
             .addEventListener("click", function (e) {
               e.preventDefault();
 
-              if (singleRecipeinput.servings > 4) {
-                addCount--;
+              if (singleRecipeinput.servings > 1) {
+                --addCount;
                 document.querySelector(
                   "#recipes-content-TimeNServing"
                 ).innerHTML = " ";
@@ -125,7 +149,11 @@ function getRecipes(n, iter) {
                   .insertAdjacentHTML("afterbegin", html);
                 ingredientsList.innerHTML = " ";
                 for (let i = 0; i < singleRecipeinput.ingredients.length; i++) {
-                  ingerdAdd(i, singleRecipeinput, addCount);
+                  if (singleRecipeinput.servings !== 0)
+                    ingerdAdd(i, singleRecipeinput, addCount);
+                  if (singleRecipeinput.servings == 0) {
+                    ingerdAdd(i, singleRecipeinput, -2);
+                  }
                 }
               }
             });
@@ -166,7 +194,7 @@ searchBtn.addEventListener("click", function (e) {
       console.log(first15);
       if (allRecipesArray.length > 15) {
         let html = `
-      <button id="NAMES-nextBtn">NEXT-></button>
+      <button id="NAMES-nextBtn"><p>NEXT-><p></button>
       `;
         namesContainer.insertAdjacentHTML("beforeend", html);
         nextBtn = document.querySelector("#NAMES-nextBtn");

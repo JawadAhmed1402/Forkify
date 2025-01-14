@@ -67,6 +67,7 @@ body {
   font-weight: 525;
   font-size: 16px;
   margin-left: -10%;
+  cursor: pointer;
   opacity: 0.9;
   filter: drop-shadow(0px 0px 12px rgb(184, 182, 182, 0.5));
 }
@@ -118,6 +119,7 @@ body {
   height: 3.5%;
   margin-top: 2%;
   padding: 5% 0% 5% 10%;
+  cursor: pointer;
 }
 .NAMES-recipe-img {
   height: 3.5pc;
@@ -154,6 +156,7 @@ body {
   margin-left: 80%;
   margin-bottom: 4%;
   text-align: end;
+  cursor: pointer;
 }
 #NAMES-nextBtn:hover {
   padding: 2% 2%;
@@ -222,6 +225,7 @@ body {
 }
 .recipes-content-Options p {
   margin-right: 15%;
+  cursor: pointer;
 }
 #recipes-content-Ingredients {
   padding-top: 3.25pc;
@@ -283,6 +287,7 @@ body {
   font-weight: 525;
   font-size: 16px;
   opacity: 0.9;
+  cursor: pointer;
   margin-bottom: 2pc;
 }
 #Directions button:hover {
