@@ -48,6 +48,7 @@ body {
   padding-right: 5%;
   font-size: large;
   opacity: 0.8;
+  filter: drop-shadow(0px 0px 12px grey);
 }
 ::placeholder {
   opacity: 0.5;
