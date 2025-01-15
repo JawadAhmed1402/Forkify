@@ -56,6 +56,8 @@ body {
 #navbar--search:focus {
   outline: none;
   opacity: 0.75;
+  filter: drop-shadow(0px 0px 12px rgb(184, 182, 182));
+  /* transform: translateY(-5%); */
 }
 #navbar--searchBtn {
   border: none;
@@ -92,6 +94,7 @@ body {
   margin: -25px 20px -25px -20px;
   padding: 35px 10px 35px 10px;
   font-size: 14.5px;
+  cursor: pointer;
 }
 #navbar--options li:hover {
   background-color: rgb(192, 192, 192, 0.2);
@@ -112,6 +115,39 @@ body {
 
   border-bottom-left-radius: 20px;
 }
+/* HTML: <div class="loader"></div> */
+.loader-1 {
+  position: relative;
+  left: 45%;
+  top: 15%;
+  width: 15%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+.loader-2 {
+  position: relative;
+  left: 45%;
+  top: 15%;
+  width: 5%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 .NAMES-recipe {
   display: flex;
   max-height: auto;

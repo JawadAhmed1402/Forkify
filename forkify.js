@@ -1,4 +1,4 @@
-"strict";
+"use strict";
 let input,
   singleRecipe,
   recipes15div,
@@ -62,6 +62,9 @@ function getRecipes(n, iter) {
   n.forEach((element, i) => {
     element.addEventListener("click", function () {
       // console.log(test);
+      singleRecipeContainer.innerHTML = " ";
+      let loaderHtml = `<div class="loader-2"></div>`;
+      singleRecipeContainer.insertAdjacentHTML("afterbegin", loaderHtml);
       singleRecipe = fetch(
         `https://forkify-api.herokuapp.com/api/v2/recipes/${
           allRecipesArray[i + test].id
@@ -181,6 +184,8 @@ function displayRecipesName(iteration) {
 }
 searchBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  let loaderHtml = `<div class="loader-1"></div>`;
+  namesContainer.insertAdjacentHTML("afterbegin", loaderHtml);
   input = fetch(
     `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchBar.value}`
   )
@@ -191,7 +196,7 @@ searchBtn.addEventListener("click", function (e) {
       displayRecipesName(i);
       let first15 = document.querySelectorAll(".NAMES-recipe");
       getRecipes(first15, 0);
-      console.log(first15);
+      // console.log(first15);
       if (allRecipesArray.length > 15) {
         let html = `
       <button id="NAMES-nextBtn"><p>NEXT-><p></button>
