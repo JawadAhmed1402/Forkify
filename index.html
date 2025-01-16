@@ -3,9 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="shortcut icon" href=""/> -->
+    <!-- <link rel="" -->
     <title>forkify</title>
   </head>
   <body>
+    <div class="new-recipe-list hidden">
+      <h1 id="escapeBtn">X</h1>
+      <div class="new-recipe">
+      <ul>
+        <h1>RECIPE DATA</h1>
+        <li>
+          <h4>Title</h3>
+          <input type="text" placeholder="TEST24" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>URL</h4>
+          <input type="text" placeholder="TEST24" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>Image URL</h4>
+          <input type="text" placeholder="TEST24" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>Publisher</h4>
+          <input type="text" placeholder="TEST24" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>Prep time</h4>
+          <input type="text" placeholder="23" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>Servings</h4>
+          <input type="text" placeholder="23" class="new-recipe-bar" />
+        </li>
+      </ul>
+
+      <ul>
+        <h1>INGREDIENTS</h1>
+        <li>
+          <h4>Ingredient 1</h3>
+          <input type="text" placeholder="0.5,kg,Rice" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>Ingredient 2</h4>
+          <input type="text" placeholder="1,,Avocado" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>Ingredient 3</h4>
+          <input type="text" placeholder=",,salt" class="new-recipe-bar" />
+        </li>
+        <li>
+          <h4>Ingredient 4</h4>
+          <input type="text" placeholder="Format: Quantity,Unit,Descrription" class="new-recipe-ingrd-bar" />
+        </li>
+        <li>
+          <h4>Ingredient 5</h4>
+          <input type="text" placeholder="Format: Quantity,Unit,Descrription" class="new-recipe-ingrd-bar" />
+        </li>
+        <li>
+          <h4>Ingredient 6</h4>
+          <input type="text" placeholder="Format: Quantity,Unit,Descrription" class="new-recipe-ingrd-bar" />
+        </li>
+      </ul>
+      </div>
+      <h3 id="uploadBtn">UPLOAD</h3>
+    </div>
+    <div class="overlay hidden"></div>
     <div id="section--container">
       <div id="navbar">
         <img src="./intro.png" id="navbar--title" />
@@ -19,8 +83,20 @@
           <button type="submit" id="navbar--searchBtn">SEARCH</button>
         </div>
         <ul id="navbar--options">
-          <li>ADD RECIPE</li>
-          <li>BOOKMARKS</li>
+          <li id="addRecipeBtn">
+            <svg width="2.4" height="2.4">
+              <use
+                href="https://recipefinder-aj.netlify.app/icons.c78699a6.svg#icon-edit"
+              ></use></svg
+            >ADD RECIPE
+          </li>
+          <li id="bookmarkBtn">
+            <svg width="2.4" height="2.4">
+              <use
+                href="https://recipefinder-aj.netlify.app/icons.c78699a6.svg#icon-bookmark"
+              ></use></svg
+            >BOOKMARKS
+          </li>
         </ul>
       </div>
       <div id="Content--area">
@@ -36,7 +112,11 @@
           <!-- <h4>NEXT</h4> -->
         </div>
         <div id="recipes-content">
-          <svg><use href="/icons.c14567a0.svg#icon-smile"></use></svg>
+          <svg>
+            <use
+              href="https://recipefinder-aj.netlify.app/icons.c14567a0.svg#icon-smile"
+            ></use>
+          </svg>
           <!--  -->
           <p class="Intro">
             ( ^-^ ) Start by searching for a recipe or<br />

@@ -15,6 +15,92 @@ body {
   background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
   margin: 6% 10%;
 }
+.new-recipe-list {
+  background-color: #fff;
+  border-radius: 8px 8px 8px 8px;
+  width: 60%;
+  /* margin-left: 10%; */
+  padding-bottom: 1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+#escapeBtn {
+  margin-right: 1%;
+  text-align: end;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.new-recipe {
+  display: flex;
+}
+
+.new-recipe ul {
+  width: 50%;
+  padding-left: 6%;
+  padding-bottom: 1%;
+}
+.new-recipe ul h1 {
+  opacity: 0.6;
+}
+.new-recipe ul li {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 20%;
+}
+.new-recipe ul li h4 {
+  opacity: 0.6;
+}
+.new-recipe ul li input {
+  border-color: rgb(221, 221, 221);
+  border-width: thin;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  padding-left: 3%;
+  width: 70%;
+  height: 2pc;
+}
+.new-recipe ul li input::placeholder {
+  opacity: 1;
+  color: black;
+  font-size: 16px;
+}
+.new-recipe ul li .new-recipe-ingrd-bar::placeholder {
+  opacity: 0.3;
+}
+#uploadBtn {
+  background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+  text-align: center;
+  margin-right: 45%;
+  margin-left: 45%;
+  border-radius: 4pc;
+  color: white;
+  padding: 0.5% 0.5%;
+  cursor: pointer;
+  /* margin-bottom: 4%; */
+}
+.hidden {
+  display: none;
+}
+
 #section--container {
   display: grid;
 }
@@ -29,6 +115,7 @@ body {
   align-items: center;
   height: 46px;
   padding: 27px 0px 19px 40px;
+  margin-right: 10%;
 }
 #BarNbtn {
   display: flex;
@@ -91,10 +178,19 @@ body {
   opacity: 0.7;
 }
 #navbar--options li {
+  /* fill: #f38e82; */
+  /* color: black; */
+  display: flex;
   margin: -25px 20px -25px -20px;
   padding: 35px 10px 35px 10px;
   font-size: 14.5px;
   cursor: pointer;
+}
+#navbar--options li svg {
+  fill: #f38e82;
+  width: 2.4rem;
+  /* height: 2.4%; */
+  /* margin-right: 0.7rem; */
 }
 #navbar--options li:hover {
   background-color: rgb(192, 192, 192, 0.2);

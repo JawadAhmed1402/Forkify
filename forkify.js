@@ -6,13 +6,35 @@ let input,
   addCount = 1,
   ingredCopy;
 const key = "171782c3-aa57-48a8-95c3-61fb2f2f8b4e";
+const modal = document.querySelector(".new-recipe-list");
+const overlay = document.querySelector(".overlay");
 const searchBar = document.querySelector("#navbar--search");
 const searchBtn = document.querySelector("#navbar--searchBtn");
 const namesContainer = document.querySelector("#NAMES");
+const addRecipe = document.querySelector("#addRecipeBtn");
+const bookMark = document.querySelector("#bookmarkBtn");
+const escBtn = document.querySelector("#escapeBtn");
 let nextBtn;
 const singleRecipeContainer = document.querySelector("#recipes-content");
 let ingredientsList;
 let i = 0;
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+addRecipe.addEventListener("click", openModal);
+overlay.addEventListener("click", closeModal);
+escBtn.addEventListener("click", closeModal);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
 function ingerdAdd(i, singleRecipeinput, count) {
   // let copy = count;
   // if (count == 0) copy = -2;
