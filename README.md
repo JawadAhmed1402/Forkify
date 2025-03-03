@@ -75,5 +75,3 @@ If you have any ideas for **improvements or new features**, feel free to **open 
 
 
 ## 💬 Feel free to connect, share feedback, or collaborate! 🚀
-
--Special thanks to the developers of Forkify for creating such a valuable resource for food enthusiasts everywhere.
