@@ -59,13 +59,13 @@ If you have any ideas for **improvements or new features**, feel free to **open 
 
 
 ## 🙌 Acknowledgements
-💡 **Inspired by the Forkify API**, which provides a fantastic collection of recipes.
-🎉 **Special thanks** to the **ForkifyAPI developers** for creating such a valuable resource for food enthusiasts!
+💡 **Inspired by the Forkify API**, which provides a fantastic collection of recipes.        
+🎉 **Special thanks** to the **ForkifyAPI developers** for creating such a valuable resource for food enthusiasts!       
 
 
 
 ## 🧑‍💻 Authors
-👤 Jawad Ahmed
+👤 Jawad Ahmed      
 [🔗 GitHub Profile](https://github.com/JawadAhmed1402/)
 
 
