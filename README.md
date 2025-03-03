@@ -29,6 +29,7 @@
 ```http
   https://forkify-api.herokuapp.com/api/v2/recipes/
 ```
+## 🍽️ Get Recipe by ID  
 
 | Parameter | Required     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -43,6 +44,7 @@
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `Yes` | The id of the recipe to be fetched or deleted (part of UR) |
 
+## 🔑 Get Recipe with API Key
 ```http
 https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886?key=<insert your key>
 ```
@@ -52,8 +54,14 @@ https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886?key=<i
 
 ## 👨‍💻 Contributing
 
-Contributions are **welcome!** 🚀
+Contributions are **welcome!** 🚀   
 If you have any ideas for **improvements or new features**, feel free to **open an issue** or **submit a pull request**.
+
+
+## 🙌 Acknowledgements
+💡 **Inspired by the Forkify API**, which provides a fantastic collection of recipes.
+🎉 **Special thanks** to the **ForkifyAPI developers** for creating such a valuable resource for food enthusiasts!
+
 
 
 ## 🧑‍💻 Authors
@@ -61,9 +69,6 @@ If you have any ideas for **improvements or new features**, feel free to **open 
 [🔗 GitHub Profile](https://github.com/JawadAhmed1402/)
 
 
-## 🙌 Acknowledgements
-
--This project was inspired by the Forkify API, which provides access to a vast collection of recipes.  
 
 ## 📬 Connect with Me
 
