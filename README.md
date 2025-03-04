@@ -7,7 +7,8 @@
 
 **Forkify** is a **recipe search and management web application** that utilizes the **Forkify API** to provide access to **over 100,000+ recipes**. Users can **search for recipes**, **view detailed instructions**, and **save their favorite recipes** for later reference.  
 
-## 🚀 Features  
+## 🚀 Features 
+
 ✅ **🔎 Search Recipes** – Find recipes by keywords, ingredients, or names from a **huge database**  
 ✅ **❤️ Save Favorite Recipes** – Bookmark recipes for easy access later  
 ✅ **📁 User Profiles** – View and manage saved recipes in your personal collection  
@@ -59,12 +60,13 @@ If you have any ideas for **improvements or new features**, feel free to **open 
 
 
 ## 🙌 Acknowledgements
+
 💡 **Inspired by the Forkify API**, which provides a fantastic collection of recipes.        
 🎉 **Special thanks** to the **ForkifyAPI developers** for creating such a valuable resource for food enthusiasts!       
 
 
-
 ## 🧑‍💻 Authors
+
 👤 Jawad Ahmed      
 [🔗 GitHub Profile](https://github.com/JawadAhmed1402/)
 
