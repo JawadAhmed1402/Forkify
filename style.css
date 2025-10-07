@@ -104,6 +104,7 @@ body {
 }
 #navbar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px 8px 0px 0px;
@@ -484,3 +485,4 @@ body {
   width: 150px;
   margin-bottom: 1.921pc;
 }
+
