@@ -186,7 +186,7 @@ body {
 #addRecipeBtn {
   display: flex;
   align-items: center;
-  font-size: 1vw;
+  font-size: 0.5vw;
 }
 #addRecipeBtn img {
   /* fill: #f38e82; */
@@ -486,5 +486,6 @@ body {
   width: 150px;
   margin-bottom: 1.921pc;
 }
+
 
 
